@@ -9,8 +9,8 @@ Oracle<br/>
 JDBC
 
 ## 기능
-E-R 모델 설계 링크
+E-R 모델 설계 링크<br/>
 [https://github.com/DongJooKim1541/Java_project/blob/master/DB%EA%B5%AC%ED%98%84.pptx]
 
-발표 문서 링크
+발표 문서 링크<br/>
 [https://github.com/DongJooKim1541/Java_project/blob/master/bankrupt.pdf]
