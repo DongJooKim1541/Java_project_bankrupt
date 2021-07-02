@@ -6,7 +6,7 @@ Java에 Oracle을 연동하여 은행 업무 시스템을 구현하려고 시도
 ## 활용 기술
 JAVA<br/>
 Oracle<br/>
-Apache Tomcat
+JDBC
 
 ## 기능
 완료보고서 문서 링크
