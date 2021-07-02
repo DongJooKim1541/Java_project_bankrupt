@@ -9,8 +9,8 @@ Oracle<br/>
 JDBC
 
 ## 기능
-완료보고서 문서 링크
+E-R 모델 설계 링크
 [https://github.com/DongJooKim1541/AndroidProjects_-Graduation_project/blob/main/B03_%EC%BD%94%EB%94%A9%EC%A4%91%EB%8F%85.docx]
 
 발표 문서 링크
-[https://github.com/DongJooKim1541/AndroidProjects_-Graduation_project/blob/main/B03_%EC%BD%94%EB%94%A9%EC%A4%91%EB%8F%85.pptx]
+[https://github.com/DongJooKim1541/Java_project/blob/master/bankrupt.pdf]
