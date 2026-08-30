@@ -111,8 +111,8 @@ Oracle 설치 경로의 `jdbc/lib/ojdbc6.jar`를 프로젝트 클래스패스에
 
 **3. 접속 정보 수정**
 
-`src/bankrupt/DBConnection.java`의 계정·비밀번호·접속 URL을 자신의 환경에 맞게 고칩니다.
-URL 형식은 다음과 같습니다.
+`src/bankrupt/DBConnection.java`의 `YOUR_DB_USER`, `YOUR_DB_PASSWORD`, `YOUR_SID`를 자신의
+환경에 맞게 고칩니다. URL 형식은 다음과 같습니다.
 
 ```
 jdbc:oracle:thin:@<호스트>:<포트>:<SID>
@@ -132,6 +132,10 @@ public static void MakeTable() throws SQLException {
     ad.MakeAdmin();
 }
 ```
+
+여기서 정한 관리자 아이디를 `src/bankrupt/User.java`의 `'ADMIN_ID'` 자리에도 똑같이 적어야 합니다.
+회원가입할 때 이 값이 `BankUser.AdminId`로 들어가는데, `Admin` 테이블에 없는 값이면 외래키 제약에
+걸립니다.
 
 **5. 실행**
 
@@ -173,7 +177,8 @@ public static void MakeTable() throws SQLException {
 - 이체와 환전이 하나의 트랜잭션으로 묶여 있지 않다. 출금과 입금을 각각 실행하고 따로 커밋하므로,
   중간에 실패하면 한쪽만 반영된다.
 - 환전 금액은 실수로 계산되는데 `Money` 컬럼이 `INT`라 소수점이 잘린다.
-- 회원가입 시 `AdminId` 값이 소스에 고정되어 있다.
+- 회원가입 시 삽입되는 `AdminId` 값이 소스에 고정되어 있다(`User.java`의 `'ADMIN_ID'`).
+  관리자를 여럿 두거나 아이디를 바꾸면 소스를 함께 고쳐야 한다.
 
 **보안**
 

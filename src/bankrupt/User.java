@@ -65,6 +65,7 @@ public class User {
   			count1 =rs.getInt(1);
 		}
 		try {
+			// AdminId 는 Main.MakeTable() 에서 만든 관리자의 Id 와 같아야 한다.
 			stmt.executeUpdate("insert into BankUser values('"+id+"','ADMIN_ID','"+passwd+"','"+name+"','"+country+"')");
 		} 
 		catch (SQLException e) {

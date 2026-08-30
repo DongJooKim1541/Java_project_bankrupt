@@ -28,3 +28,17 @@ hs_err_pid*
 
 # 빌드 산출물
 bin/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# OS
+Thumbs.db
+.DS_Store

@@ -16,6 +16,7 @@ public class DBConnection {
     public static Connection getConnection() {
     	Connection conn = null;
         try {
+        		// 자신의 Oracle 환경에 맞게 고쳐 쓴다. README 의 "실행 방법" 참고.
         		String user = "YOUR_DB_USER";
                 String pw = "YOUR_DB_PASSWORD";
                 String url = "jdbc:oracle:thin:@localhost:1521:YOUR_SID";
